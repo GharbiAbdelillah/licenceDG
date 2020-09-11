@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="299.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="licenceapplication.FXMLDocumentController">
+   <children>
+      <Button id="btn" fx:id="button" layoutX="270.0" layoutY="192.0" onAction="#getMAC" text="get serial number" />
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button id="btn" layoutX="600.0" layoutY="103.0" mnemonicParsing="false" onAction="#copier" text="copier" />
+      <TextField fx:id="addressMAC" layoutX="8.0" layoutY="104.0" prefHeight="33.0" prefWidth="588.0" promptText="press &quot;get serial number&quot;" />
+      <Label fx:id="lblCopier" layoutX="244.0" layoutY="262.0" text="le numéro de la licence est bien copier" textFill="#09ff00" visible="false" />
+      <Label layoutX="178.0" layoutY="34.0" text="Bienveneu chez DGSoftware">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.10952380952380952">
+               <stops>
+                  <Stop color="#da0000" />
+                  <Stop color="#00ff87" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button id="facebook" layoutX="8.0" layoutY="246.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="38.0" />
+      <Hyperlink layoutX="46.0" layoutY="251.0" text="facebook.com/DGSoftware" />
+   </children>
+   <stylesheets>
+      <URL value="@../Style/mainStyle.css" />
+      <URL value="@../Style/button.css" />
+      <URL value="@../Style/popUP.css" />
+   </stylesheets>
+</AnchorPane>
